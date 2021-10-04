@@ -1,0 +1,61 @@
+private void AddBook(PrintWriter Save) {
+		Frame BIF=new Frame();
+		BIF.setTitle("Add Book");
+		Show(BIF,Save);
+	}
+	private void Show(Frame F,PrintWriter Save) {
+		Find_Action A=new Find_Action();
+		F.setSize(800, 200);
+		JTextField[] T=new JTextField[9];
+		JPanel SBF=new JPanel();
+		JButton ANB=new JButton("Add New Book");
+		F.setLayout(null);
+		F.add(SBF);
+		SBF.setBounds(0, 0, 800, 200);
+		SBF.setLayout(new GridLayout(6, 4, 10, 10));
+		SBF.setBackground(Color.WHITE);
+		SBF.add(new JLabel("ID →→→"));//1
+		SBF.add(new JLabel("Bo"+Num));
+		JLabel l=new JLabel("|| Name →→→");
+		l.setSize(150, 150);
+		SBF.add(l);//2
+		SBF.add(T[0]);
+		JLabel l1=new JLabel("Edition →→→");
+		l1.setSize(150, 150);
+		SBF.add(l1);//3
+		SBF.add(T[1]);
+		JLabel l2=new JLabel("|| Writer →→→");
+		l2.setSize(150, 150);
+		SBF.add(l2);//4
+		SBF.add(T[2]);
+		SBF.add(new JLabel("Publisher →→→"));//5
+		SBF.add(T[3]);
+		SBF.add(new JLabel("|| Publish Price →→→"));//6
+		SBF.add(T[4]);
+		SBF.add(new JLabel("Publish Date →→→"));//7
+		SBF.add(T[5]);
+		SBF.add(new JLabel("|| Availablaty →→→"));//8
+		SBF.add(T[6]);
+		JLabel l4=new JLabel("in Storage →→→");//9
+		l4.setSize(50, 150);
+		SBF.add(l4);
+		SBF.add(T[7]);
+		JLabel l5=new JLabel("|| in Library →→→");//10
+		l5.setSize(50, 150);
+		SBF.add(l5);
+		SBF.add(T[8]);
+		ANB.addActionListener(A);
+		SBF.add(ANB);
+		SBF.add(new JLabel("|| Programming By : →→→"));
+		SBF.add(new JLabel("Eng // Najm"));
+		TheNewBook(T,Save);
+	}
+	private void TheNewBook(JTextField[] T,PrintWriter Save) {
+		String s;
+		for(int i=0;i<9;i++) {
+			s=T[i].getText();
+			s=Name_Save(s);
+			Save.print(s+" ");
+		}
+		Save.println(" ");
+	}

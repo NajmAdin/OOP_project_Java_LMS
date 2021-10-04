@@ -1,0 +1,8 @@
+7
+Angels,&,Demons Bo00 2ndEd Dan,Brown 2006 Arab,Scientific,Publishers,Inc. 40.00 1 20 5
+Programming,1 NBo062 3rded doc 2000 fci 20.0 1 12 14 
+MathIII NBo052 2nded doc 2016 fci 40.0 1 12 3 
+Math NBo042 1st Doc 2006 fci 40.0 1 12 5 
+1300,Math,Formulas Bo01 1stEd Alex,Seivrin,Ph.D. 2010 Seivrin.Inc 500.0 1 130 4 
+Longman,Dictionary Bo02 21stEd British,Ministry,of,Education 2012 Dar,Nahdet,Misr,Inc 50.0 1 234 15 
+Al-Tafkeer,Al-3ilmy Bo03 15thEd Foad,Zakaria,Ph.D. 2016 Dar,Al-wafaa,Ledonya,Al-Tfa3a,Wa,Al-Nashr,Inc 50.0 1 2 8 
